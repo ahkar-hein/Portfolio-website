@@ -5,6 +5,7 @@
 }
 html{
     font-family: monospace;
+    background-color: antiquewhite;
 }
 a {
     text-decoration: none;
@@ -61,18 +62,7 @@ li a {
     height: 100%;
     width: 100%;
     margin-top: 0vh;
-    animation: scale 15s;
 }
-/* hero image zooming in to out */
-@keyframes scale {
-    0% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-/* to make overlay the hero image */
 .overlay {
     position: absolute;
     height: 100%;
@@ -113,7 +103,45 @@ li a {
 .reachme:hover {
     background-color: rgba(100, 100, 100, 0.4);
 }
-/*  */
+/* about section */
+.aboutcontainer {
+    margin: 10%;
+    width: 60%;
+    height: auto;
+    background-color: #f56042;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    margin-left: 20%;
+    color: var(--blue-text);
+    border-radius: 30px;
+}
+.aboutsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.about-text {
+    margin-top: 20%;
+    height: auto;
+    width: 60%;
+    font-size: 1.5rem;
+    margin-left: 100px;
+    margin-bottom: 30%;
+}
+.about-text p {
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: 300;
+    padding: 10px;
+    line-height: 1.5;
+}
+.about-text h1 {
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: underline;
+}
 /*  */
 /* project section  */
 .project-container {
@@ -195,3 +223,4 @@ li a {
     font-size: 1.8em;
     font-weight: 400;
 }
+/* Responsive layout */
