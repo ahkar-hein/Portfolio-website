@@ -6,6 +6,7 @@
 html{
     font-family: monospace;
     background-color: antiquewhite;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -223,4 +224,56 @@ li a {
     font-size: 1.8em;
     font-weight: 400;
 }
-/* Responsive layout */
+/* Contact section */
+.contactcontainer {
+    margin: 10%;
+    width: 40%;
+    height: 20%;
+    background-color: #f56042;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    margin-left: 30%;
+    color: var(--blue-text);
+    border-radius: 30px;
+}
+.contactsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.contact-text {
+    margin-top: 20%;
+    height: auto;
+    width: 60%;
+    font-size: 1.5rem;
+    margin-left: 100px;
+    margin-bottom: 30%;
+}
+.contact-text h1 {
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: underline;
+    margin-bottom: 10%;
+}    
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+/* Responsive layout for any devices */
+@media (max-width: 768px) {
+    #nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: block;
+    }
+    .mobile-nav-bar{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 5;
+    }
+}
