@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
 }
+/* Set font family background color scroll-behavior for the whole website */
 html{
     font-family: monospace;
     background-color: antiquewhite;
     scroll-behavior: smooth;
 }
+/* make text decoration none for all of the a tag */
 a {
     text-decoration: none;
 }
@@ -64,6 +66,7 @@ li a {
     width: 100%;
     margin-top: 0vh;
 }
+/* Set overlay for main(hero) image */
 .overlay {
     position: absolute;
     height: 100%;
@@ -88,6 +91,7 @@ li a {
     z-index: 2;
 }
 /* styling text and a link that on the hero image */
+/* Set color blue for first word  */
 .firstword {
     color: var(--blue-text);
 }
@@ -98,12 +102,14 @@ li a {
     margin-top: 20px;
     text-align: center;
 }
+/* reach out to me link button style and hover */
 .reachmetxt {
     color: #FFF;
 }
 .reachme:hover {
     background-color: rgba(100, 100, 100, 0.4);
 }
+/* set height auto for all section */
 #hero,
 #about,
 #work,
@@ -111,6 +117,7 @@ li a {
     height: auto;
 }
 /* about section */
+/* make container for about section */
 .aboutcontainer {
     margin: 10%;
     width: 60%;
@@ -121,12 +128,14 @@ li a {
     color: var(--blue-text);
     border-radius: 30px;
 }
+/* using display flex for about section */
 .aboutsection {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
 }
+/* text design from about container */
 .about-text {
     margin-top: 20%;
     height: auto;
@@ -149,10 +158,12 @@ li a {
 }
 /*  */
 /* project section  */
+/* make container for project section */
 .project-container {
     width: 100%;
     height: auto;
 }
+/* Work section header design */
 .project-header {
     font-size: 4rem;
     display: flex;
@@ -167,6 +178,8 @@ li a {
     justify-content: center;
     flex-flow: wrap;
 }
+/* According to acceptance criteria, the first project should be bigger than other
+make the firstproject card bigger than other */
 .firstproject {
     width: 700px;
     height: 700px;
@@ -179,6 +192,7 @@ li a {
     background-size: cover;
     background-position: center;
 }
+/* set width and height for big card image */
 .bgimg1{
     width: 700px;
     height: 650px;
@@ -187,6 +201,16 @@ li a {
 .firstproject:hover {
     opacity: 0.5;
 }
+/* project lable name and content design */
+.firstproject .name {
+    font-size: 3em;
+    font-weight: 400;
+}
+.firstproject .content {
+    font-size: 2em;
+    font-weight: 400;
+}
+/* create small card for other project */
 .projectimgsmall {
     width: 300px;
     height: 250px;
@@ -216,14 +240,7 @@ li a {
     background-color: white;
     overflow: hidden;
 }
- .firstproject .name {
-    font-size: 3em;
-    font-weight: 400;
-}
-.firstproject .content {
-    font-size: 2em;
-    font-weight: 400;
-}
+/* label from small card design */
 .projectsmallcard .name {
     font-size: 2em;
     font-weight: 400;
@@ -264,6 +281,7 @@ li a {
     text-decoration: underline;
     margin-bottom: 10%;
 }    
+/* facebook instagram github icon styling */
 .icon {
     width: 50px;
     height: 50px;
