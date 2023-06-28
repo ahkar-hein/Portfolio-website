@@ -287,5 +287,41 @@ make the firstproject card bigger than other */
     height: 50px;
     border-radius: 20px;
 }
-/* Responsive layout for any devices */
+/* media query for any devices ( max width 600px) */
+@media only screen and (max-width: 600px) {
+    /* Hide the navigation bar */
+    .nav-bar {
+      display: none;
+    }
 
+    /* Adjust the hero text position */
+    .hero-text {
+      top: 25%;
+      left: 5%;
+      font-size: 20px;
+    }
+  
+    /* Adjust the about section container */
+    .aboutcontainer {
+      margin: 5%;
+      width: 90%;
+      margin-left: 5%;
+    }
+  
+    /* Adjust the project section */
+    .project {
+      justify-content: center;
+    }
+     /* Adjust the project cards */
+    .projectsmallcard {
+        width: 90%;
+        height: 400px;
+        margin: 20px;
+    }
+  /* Adjust the contact section container */
+  .contactcontainer {
+    margin: 5%;
+    width: 90%;
+    margin-left: 5%;
+  }
+}  
